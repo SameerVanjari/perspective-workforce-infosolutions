@@ -56,7 +56,11 @@
   <main id="main">
     <!-- ============ HERO ============ -->
     <section class="hero" id="home">
-      <div class="hero__bg" role="img" aria-label="A professional team collaborating in a modern corporate office"></div>
+      <div class="hero__media">
+        <video class="hero__video" autoplay muted loop playsinline preload="metadata" aria-hidden="true" poster="https://lh3.googleusercontent.com/aida/AP1WRLvHB0Ts9cB4UbnwINUIyxQZx2DTlLl3NOQjWNw8BG5GPNYoLbmXtSfpzLda3m1w66hx68RCH_LK4yD-cT9fJQeA6Z3rpjrCBbkl7vF6GjeZ63QBq_Jkw8IxXoCwgXx7Bxcz5oLTqvtPY3zE7jKAnlcBfjq0Rjb7kxpY6KT94HLxZAdN69VVu451EatDyeTDoN7lpHa5BU85iEJZctaxqNBwXwGE3FY74svxOygF7HBywEkH4hyqCASx6eE">
+          <source src="assets/hero-bg.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div class="hero__scrim"></div>
       <div class="hero__grain" aria-hidden="true"></div>
 
@@ -313,12 +317,13 @@
             <a class="cta-band__link" href="#contact">Schedule a Call <span class="material-symbols-outlined">arrow_forward</span></a>
           </div>
         </div>
-        <div class="cta-band__social">
-          <a href="#" aria-label="Share"><span class="material-symbols-outlined">share</span></a>
-          <a href="#" aria-label="Website"><span class="material-symbols-outlined">public</span></a>
-          <a href="#" aria-label="Email"><span class="material-symbols-outlined">alternate_email</span></a>
-          <a href="#" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a>
-          <a href="#" aria-label="LinkedIn"><span class="material-symbols-outlined">interests</span></a>
+        <!-- TODO: replace the placeholder profile URLs with the real social handles -->
+        <div class="social">
+          <a href="https://www.linkedin.com/company/perspectives-workforce" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+          <a href="https://x.com/perspectivesworkforce" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+          <a href="https://www.instagram.com/perspectivesworkforce" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.9 5.9 0 0 0-2.13 1.38A5.9 5.9 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.8.72 1.48 1.38 2.13a5.9 5.9 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.38 5.9 5.9 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 12 8a4 4 0 0 1 0 8zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg></a>
+          <a href="https://www.youtube.com/@perspectivesworkforce" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg></a>
+          <a href="https://www.facebook.com/perspectivesworkforce" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.35l.35-2.73H13.5V9.53c0-.79.22-1.33 1.36-1.33h1.45V5.74c-.25-.03-1.11-.11-2.11-.11-2.09 0-3.52 1.28-3.52 3.62v2.02H8.22V14h2.46v7h2.82z"/></svg></a>
         </div>
       </div>
     </section>
@@ -398,10 +403,90 @@
         </div>
       </div>
     </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--dark contact" id="contact">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head section-head--center section-head--dark reveal">
+          <span class="section-head__eyebrow">Contact Us</span>
+          <h2 class="section-head__title">Let's Build Your Team</h2>
+          <p class="section-head__desc">We take great pride in using our expertise for you. Tell us what you need and we'll be in touch within 24 hours.</p>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact__info">
+            <p class="contact__tagline reveal">Hire beyond borders, <span>spend within means.</span></p>
+            <div class="contact-card reveal">
+              <span class="contact-card__icon material-symbols-outlined">location_on</span>
+              <div class="contact-card__body">
+                <h3>Pune (Head Office)</h3>
+                <p>Marigold Complex, Kalyani Nagar-Vadgaon Sheri, Pune – 411014</p>
+              </div>
+            </div>
+            <div class="contact-card reveal">
+              <span class="contact-card__icon material-symbols-outlined">public</span>
+              <div class="contact-card__body">
+                <h3>London (International Desk)</h3>
+                <p>United Kingdom</p>
+              </div>
+            </div>
+            <div class="contact-card reveal">
+              <span class="contact-card__icon material-symbols-outlined">phone</span>
+              <div class="contact-card__body">
+                <h3>Call Us</h3>
+                <p><a href="tel:+918600204103">+91 8600204103</a></p>
+              </div>
+            </div>
+            <div class="contact-card reveal">
+              <span class="contact-card__icon material-symbols-outlined">mail</span>
+              <div class="contact-card__body">
+                <h3>Email Us</h3>
+                <p><a href="mailto:info@perspectivesworkforceinfosolution.com">info@perspectivesworkforceinfosolution.com</a></p>
+              </div>
+            </div>
+            <a class="btn btn--whatsapp reveal" href="https://wa.me/918600204103?text=Hello%20Perspectives%20Workforce%2C%20I%27d%20like%20to%20enquire%20about%20your%20recruitment%20services." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35zM12.04 21.79c-1.73 0-3.43-.47-4.91-1.35l-.35-.21-3.65.96.97-3.56-.23-.36a9.75 9.75 0 0 1-1.49-5.2c0-5.39 4.39-9.78 9.78-9.78 2.61 0 5.06 1.02 6.9 2.86a9.7 9.7 0 0 1 2.86 6.9c0 5.39-4.39 9.78-9.79 9.78zm8.4-18.18A11.77 11.77 0 0 0 12.04 0C5.49 0 .15 5.34.15 11.9c0 2.1.55 4.14 1.59 5.95L.05 24l6.29-1.65a11.9 11.9 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.49-8.39z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+
+          <div class="contact__panel reveal">
+            <div class="contact__panel-head">
+              <h3>Send an Enquiry</h3>
+              <p>Tell us about your role and we'll get back to you within 24 hours.</p>
+            </div>
+
+            <form class="form" id="quoteForm" novalidate>
+              <div class="hp-field" aria-hidden="true">
+                <label>Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+              </div>
+              <div class="form__row">
+                <label class="form__field">Name<input type="text" name="name" required placeholder="Your name" /></label>
+                <label class="form__field">Email<input type="email" name="email" required placeholder="you@company.com" /></label>
+              </div>
+              <div class="form__row">
+                <label class="form__field">Phone<input type="tel" name="phone" placeholder="+91" /></label>
+                <label class="form__field">Company<input type="text" name="company" placeholder="Company name" /></label>
+              </div>
+              <label class="form__field">Role / Requirement<input type="text" name="subject" placeholder="e.g. Permanent Staffing, RPO" /></label>
+              <label class="form__field">Message<textarea name="message" rows="4" placeholder="Tell us about your hiring needs"></textarea></label>
+              <button class="btn btn--primary" type="submit">Send Enquiry</button>
+              <p class="form__status" role="status" aria-live="polite"></p>
+              <p class="form__note">We reply within 24 hours.</p>
+            </form>
+          </div>
+        </div>
+
+        <div class="contact__map reveal">
+          <iframe title="Perspectives Workforce — Pune office location" src="https://www.google.com/maps?q=Marigold+Complex,+Kalyani+Nagar,+Vadgaon+Sheri,+Pune+411014&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ============ FOOTER ============ -->
-  <footer class="site-footer" id="contact">
+  <footer class="site-footer" id="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__col footer__col--brand">
@@ -420,6 +505,13 @@
               <span>London: International Desk</span>
             </div>
           </div>
+          <div class="social">
+            <a href="https://www.linkedin.com/company/perspectives-workforce" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+            <a href="https://x.com/perspectivesworkforce" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+            <a href="https://www.instagram.com/perspectivesworkforce" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.9 5.9 0 0 0-2.13 1.38A5.9 5.9 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.8.72 1.48 1.38 2.13a5.9 5.9 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.38 5.9 5.9 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 12 8a4 4 0 0 1 0 8zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg></a>
+            <a href="https://www.youtube.com/@perspectivesworkforce" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg></a>
+            <a href="https://www.facebook.com/perspectivesworkforce" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.35l.35-2.73H13.5V9.53c0-.79.22-1.33 1.36-1.33h1.45V5.74c-.25-.03-1.11-.11-2.11-.11-2.09 0-3.52 1.28-3.52 3.62v2.02H8.22V14h2.46v7h2.82z"/></svg></a>
+          </div>
         </div>
 
         <div class="footer__col">
@@ -437,31 +529,31 @@
         <div class="footer__col">
           <h4 class="footer__heading">Services</h4>
           <ul class="footer__links">
-            <li><a href="#">End-to-End Staffing</a></li>
-            <li><a href="#">Permanent Staffing</a></li>
-            <li><a href="#">Contract &amp; Temporary Staffing</a></li>
-            <li><a href="#">Recruitment Process Outsourcing</a></li>
-            <li><a href="#">Executive Search &amp; Head Hunting</a></li>
-            <li><a href="#">International Recruitment</a></li>
-            <li><a href="#">Bulk Recruitment</a></li>
-            <li><a href="#">HRM Consulting</a></li>
+            <li><a href="#services">End-to-End Staffing</a></li>
+            <li><a href="#services">Permanent Staffing</a></li>
+            <li><a href="#services">Contract &amp; Temporary Staffing</a></li>
+            <li><a href="#services">Recruitment Process Outsourcing</a></li>
+            <li><a href="#services">Executive Search &amp; Head Hunting</a></li>
+            <li><a href="#services">International Recruitment</a></li>
+            <li><a href="#services">Bulk Recruitment</a></li>
+            <li><a href="#services">HRM Consulting</a></li>
           </ul>
         </div>
 
         <div class="footer__col">
           <h4 class="footer__heading">Industry</h4>
           <ul class="footer__links footer__links--compact">
-            <li><a href="#">Technology &amp; IT</a></li>
-            <li><a href="#">Banking &amp; Insurance</a></li>
-            <li><a href="#">Financial Services</a></li>
-            <li><a href="#">Pharmaceutical &amp; Healthcare</a></li>
-            <li><a href="#">BPO &amp; KPO</a></li>
-            <li><a href="#">Retail &amp; Lifestyle</a></li>
-            <li><a href="#">Automotive</a></li>
-            <li><a href="#">Digital</a></li>
-            <li><a href="#">Industrial</a></li>
-            <li><a href="#">Chemical</a></li>
-            <li><a href="#">Infrastructure &amp; Power</a></li>
+            <li><a href="#industries">Technology &amp; IT</a></li>
+            <li><a href="#industries">Banking &amp; Insurance</a></li>
+            <li><a href="#industries">Financial Services</a></li>
+            <li><a href="#industries">Pharmaceutical &amp; Healthcare</a></li>
+            <li><a href="#industries">BPO &amp; KPO</a></li>
+            <li><a href="#industries">Retail &amp; Lifestyle</a></li>
+            <li><a href="#industries">Automotive</a></li>
+            <li><a href="#industries">Digital</a></li>
+            <li><a href="#industries">Industrial</a></li>
+            <li><a href="#industries">Chemical</a></li>
+            <li><a href="#industries">Infrastructure &amp; Power</a></li>
           </ul>
         </div>
       </div>
@@ -471,9 +563,9 @@
       <div class="footer__bottom">
         <p>© 2025 Perspectives Workforce Infosolutions. All Rights Reserved.</p>
         <nav class="footer__legal" aria-label="Legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms &amp; Conditions</a>
-          <a href="#">Site Map</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="sitemap.html">Site Map</a>
         </nav>
       </div>
     </div>
@@ -490,8 +582,13 @@
     </div>
   </div>
 
+  <a class="whatsapp-float" href="https://wa.me/918600204103?text=Hello%20Perspectives%20Workforce%2C%20I%27d%20like%20to%20enquire%20about%20your%20recruitment%20services." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35zM12.04 21.79c-1.73 0-3.43-.47-4.91-1.35l-.35-.21-3.65.96.97-3.56-.23-.36a9.75 9.75 0 0 1-1.49-5.2c0-5.39 4.39-9.78 9.78-9.78 2.61 0 5.06 1.02 6.9 2.86a9.7 9.7 0 0 1 2.86 6.9c0 5.39-4.39 9.78-9.79 9.78zm8.4-18.18A11.77 11.77 0 0 0 12.04 0C5.49 0 .15 5.34.15 11.9c0 2.1.55 4.14 1.59 5.95L.05 24l6.29-1.65a11.9 11.9 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.49-8.39z"/></svg>
+  </a>
+
   <button class="back-to-top" id="backToTop" aria-label="Back to top"><span class="material-symbols-outlined">arrow_upward</span></button>
 
+  <script src="js/config.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
