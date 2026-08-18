@@ -7,10 +7,6 @@
   /* ------------------------------------------------------------------------
      Config
      ------------------------------------------------------------------------ */
-  // Set to an embed URL (e.g. "https://www.youtube.com/embed/VIDEO_ID")
-  // when the real company video is available.
-  var VIDEO_SRC = "";
-
   // Google Apps Script Web App URL for contact-form submissions.
   // Injected by js/config.js (generated from .env — see scripts/generate-config.js).
   // Empty → falls back to opening the visitor's email client instead.
@@ -61,7 +57,6 @@
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") {
       setMenu(false);
-      closeVideo();
     }
   });
 
@@ -141,49 +136,6 @@
     });
     testimonialsSection.addEventListener("mouseleave", restartAutoplay);
   }
-
-  /* ------------------------------------------------------------------------
-     Video modal
-     ------------------------------------------------------------------------ */
-  var playBtn = document.getElementById("playBtn");
-  var videoModal = document.getElementById("videoModal");
-  var videoFrame = videoModal.querySelector("iframe");
-
-  var placeholderHtml =
-    "<style>" +
-    "body{margin:0;height:100vh;display:flex;align-items:center;justify-content:center;" +
-    "background:radial-gradient(120% 120% at 50% 0%, #182741 0%, #0f172a 60%);" +
-    "font-family:'Plus Jakarta Sans',sans-serif;color:#fff;text-align:center;}" +
-    ".b{padding:2rem;} .l{font-size:1.6rem;font-weight:800;margin-bottom:.6rem;}" +
-    ".s{font-size:1rem;opacity:.7;max-width:26rem;margin:0 auto;}" +
-    "</style>" +
-    '<div class="b"><div class="l">Perspectives Workforce</div>' +
-    '<div class="s">Our company film is coming soon. Reach out to see how we build stronger teams together.</div></div>';
-
-  function openVideo() {
-    if (VIDEO_SRC) {
-      videoFrame.src = VIDEO_SRC;
-    } else {
-      videoFrame.srcdoc = placeholderHtml;
-    }
-    videoModal.hidden = false;
-    document.body.classList.add("no-scroll");
-  }
-
-  function closeVideo() {
-    videoModal.hidden = true;
-    videoFrame.src = "";
-    videoFrame.srcdoc = "";
-    document.body.classList.remove("no-scroll");
-  }
-
-  if (playBtn) {
-    playBtn.addEventListener("click", openVideo);
-  }
-
-  videoModal.querySelectorAll("[data-close]").forEach(function (el) {
-    el.addEventListener("click", closeVideo);
-  });
 
   /* ------------------------------------------------------------------------
      Active nav link (scrollspy)
@@ -336,7 +288,7 @@
           form.reset();
         })
         .catch(function () {
-          status(form, "Something went wrong. Please email us at info@perspectivesworkforceinfosolution.com", "error");
+          status(form, "Something went wrong. Please email us at hiring@perspectivesworkforceinfosolution.com", "error");
         })
         .finally(function () {
           btn.disabled = false;
@@ -349,7 +301,7 @@
         .map(function (k) { return k + ": " + data[k]; })
         .join("\n");
       var href =
-        "mailto:info@perspectivesworkforceinfosolution.com" +
+        "mailto:hiring@perspectivesworkforceinfosolution.com" +
         "?subject=" + encodeURIComponent("Website enquiry") +
         "&body=" + encodeURIComponent(lines);
       window.location.href = href;
